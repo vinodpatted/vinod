@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{%extends 'car/base.html'%}
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>service form</title>
+</head>
+<body>
+
+{%block child%}
+    <div class="form">
+    <div class="formcontent">
+            <form method="post">
+                {%csrf_token%}
+                <table>
+                {{form.as_table}}
+                </table>
+                <div class="green">
+                    <div>
+                        <input type="submit" value="SUBMIT THE RECORD" id="submit">
+                    </div>
+                    <div class="present">
+                        <a href="list" id="submit">SHOW ALL RECORDS</a>
+                    </div>
+                </div>
+            </form>
+    </div>
+    </div>
+
+{%endblock%}
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,257 @@
+body
+{
+background:yellow;
+}
+
+.basehtml  h1
+{
+text-align: center;
+padding:10px;
+color:yellow;
+letter-spacing:5px;
+word-spacing:1cm;
+font-style: italic;
+text-shadow:2px 2px 1px blue;
+font-weight:bold;
+font-size:bold;
+}
+
+
+.basehtml
+{
+  background:red;
+  margin-top:-18px;
+}
+
+.formcontent, .createform
+{
+  float:right;
+  margin:auto;
+  width: 35%;
+  color:orange;
+  text-transform: uppercase;
+  line-height:50px;
+  font-weight:bold;
+}
+
+#submit
+{
+background:black;
+color:white;
+text-align:center;
+margin:10px;
+font-family:cambria;
+font-weight: normal;
+font-size:15px;
+padding:5px;
+box-shadow:2px 3px 6px gray;
+border-radius:4px;
+}
+.green
+{
+display:flex;
+justify-content:space-evenly;
+align-items:center;
+}
+.green .present a
+{
+text-decoration:none;
+}
+
+.formfield
+{
+display:flex;
+justify-content:space-evenly;
+}
+
+.listview table
+{
+border:4px groove black;
+border-collapse: collapse;
+background:white;
+width:85%;
+}
+
+.listview table thead
+{
+font-size:20px;
+text-align:center;
+}
+
+
+.listview table thead th
+{
+color:black;
+height:50px;
+}
+
+
+.listview table tr td
+{
+height:40px;
+text-align:center;
+color:black;
+font-weight:bold;
+font-size:20px;
+}
+
+.listview table tr td a
+{
+text-decoration:none;
+color:blue;
+}
+
+
+.createrecord
+{
+background:green;
+text-align:center;
+font-family:cambria;
+font-weight: normal;
+font-size:15px;
+padding:5px;
+border-radius:4px;
+width:10%;
+height:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+margin: auto;
+}
+.createrecord a
+{
+color:white;
+text-decoration:none;
+}
+
+
+.creatbutton
+{
+display:flex;
+justify-content:center;
+align-items:center;
+margin: 20px;
+height:10px;
+width:2%;
+
+}
+
+.creatbutton input
+{
+background:green;
+box-shadow:2px 3px 6px gray;
+padding-left:5px;
+padding-right:5px;
+font-family:cambria;
+font-weight: normal;
+font-size:20px;
+color:white;
+
+}
+
+.createrecord:hover
+{
+box-shadow:2px 3px 6px white;
+}
+
+.confirm
+{
+margin:auto;
+color:yellow;
+display:flex;
+justify-content:center;
+width: 100%;
+padding: 10px;
+text-align:center;
+margin-top:250px;
+}
+
+
+.confirm .delete
+{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+
+.delete input
+{
+background:red;
+color:white;
+font-size:25px;
+font-family:cambria;
+font-weight:bold;
+padding-left:10px;
+padding-right:10px;
+}
+.delete a
+{
+text-decoration:none;
+border:2x solid gray;
+background:green;
+color:white;
+font-size:25px;
+font-family:cambria;
+font-weight:bold;
+padding-left:10px;
+padding-right:10px;
+}
+
+.delete .cancel
+{
+border:2px solid gray;
+}
+
+.confirm .delete  input:hover
+{
+box-shadow:2px 5px 5px red;
+}
+
+.confirm .cancel:hover
+{
+box-shadow:2px 5px 5px green;
+}
+
+
+.detail
+{
+text-align:center;
+background:white;
+width:50%;
+margin:auto;
+padding:10px;
+}
+
+
+.detail table
+{
+margin-left: auto;
+margin-right: auto;
+border-collapse: collapse;
+width:60%;
+}
+
+.detail table th, .detail table tr
+{
+height:40px;
+font-size:20px;
+}
+
+.pdf
+{
+border:2px solid blue;
+margin-top:10px;
+text-decoration:none;
+background:blue;
+color:white;
+padding:6px;
+font-size:20px;
+}
+
+.note
+{
+color:maroon;
+font-size:18px;
+}

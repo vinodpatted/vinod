@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{%extends 'car/base.html'%}
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detailed view</title>
+</head>
+<body>
+{%block child%}
+<div class="detail">
+    {%if carmodel%}
+  <h1>Details of {{carmodel.car_number}}</h1>
+    <table border="1">
+        <thead>
+        <th>CAR PARTICULARS</th>
+        <th>DESCRIPTION</th>
+        </thead>
+        <tr>
+            <td>car name</td>
+            <td>{{carmodel.car_model}}</td>
+        </tr>
+        <tr>
+            <td>owner</td>
+            <td>{{carmodel.car_owner}}</td>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>{{carmodel.car_color}}</td>
+        </tr>
+        <tr>
+            <td>car number</td>
+            <td>{{carmodel.car_number}}</td>
+        </tr>
+        <tr>
+            <td>description</td>
+            <td>{{carmodel.description}}</td>
+        </tr>
+        <tr>
+            <td>service type</td>
+            <td>{{carmodel.service_type}}</td>
+        </tr>
+        <tr>
+            <td>submission date</td>
+            <td>{{carmodel.submission_date|date:'d/M/Y'}}</td>
+        </tr>
+        <tr>
+            <td>car history</td>
+            <td>{{carmodel.year_old}} year old</td>
+        </tr>
+        <tr>
+            <td>service</td>
+            <td>{{carmodel.servicing}}</td>
+        </tr>
+    </table>
+{%endif%}
+   <br><br> <a href="pdf" class="pdf">create pdf</a>
+    <div class="note"><p>Note:pdf generation will not satisfies the requirement. Yet to modify</p></div>
+
+</div>
+
+{%endblock%}
+
+</body>
+</html>

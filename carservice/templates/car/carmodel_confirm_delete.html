@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{%extends 'car/base.html'%}
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>confirmation form</title>
+</head>
+<body>
+{%block child%}
+<div class="confirm">
+    <form method="post">
+    <h1>Do you wish to delete service details of {{carmodel.car_owner|upper}}</h1>
+    {{form.as_p}}
+    {%csrf_token%}
+        <div class="delete">
+            <div><input type="submit" value="delete"></div>
+  </form>
+        <a href="/list" class="cancel">cancel</a>
+    </div>
+</div>
+{%endblock%}
+</body>
+</html>
+
+

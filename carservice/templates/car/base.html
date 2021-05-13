@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMILEY CARS</title>
+    <link rel="stylesheet" href="{%static 'car/css/car.css'%}">
+     <style>
+    body{
+    background-image:url("/static/car/images/background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:scroll;
+    }
+    </style>
+</head>
+<body>
+<div class="basehtml">
+    <h1>PARADISE FOR CARS</h1>
+</div>
+<div class="childblock">
+
+{%block child%}
+{%endblock%}
+</div>
+
+</body>
+</html>

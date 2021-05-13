@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{%extends 'car/base.html'%}
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list view</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+{%block child%}
+<div class="listview">
+    {%if carmodel_list%}
+    <table border='1' align="center">
+        <thead>
+            <th>CAR OWNER NAME</th>
+            <th>CAR MODEL</th>
+            <th>CAR NUMBER</th>
+            <th>SUBMISSION DATE</th>
+            <th>SERVICE TYPE</th>
+            <th>UPDATE</th>
+            <th>DELETE</th>
+        </thead>
+            {%for c in carmodel_list%}
+        <tr>
+            <td class="carowner"><a href="/{{c.id}}">{{c.car_owner|upper}}</a></td>
+            <td>{{c.car_model|upper}}</td>
+            <td>{{c.car_number|upper}}</td>
+            <td>{{c.submission_date|date:'d/M/Y'}}</td>
+            <td>{{c.service_type|upper}}</td>
+            <td><a href="update/{{c.id}}">update</a></td>
+            <td><a href="delete/{{c.id}}">delete</a></td>
+        </tr>
+            {%endfor%}
+    </table><br><br>
+    {%endif%}
+</div>
+<div class="createrecord">
+    <a href="create">CREATE NEW RECORD</a>
+</div>
+{%endblock%}
+
+</body>
+</html>
